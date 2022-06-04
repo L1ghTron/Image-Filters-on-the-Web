@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title></title>
-	<!--Importing CSS File-->
-	<link rel="stylesheet" href="css.css">
-	<!--Importing JS File-->
-	<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"defer></script>
-	<script src="js.js"></script> 
-</head>
-<body>
-	<h1>Image Filters on the Web</h1>
-	<canvas id="can"></canvas>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--Importing CSS File-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Importing JS File-->
+    <script
+      src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <h1>Image Filters on the Web</h1>
+    <canvas id="can"></canvas>
 
-	<h2>Load Image</h2>
-	<input type="file" multiple=false accept="image/*" id="imgfile" onchange="upload()">
+    <h2>Load Image</h2>
+    <input
+      type="file"
+      multiple="false"
+      accept="image/*"
+      id="imgfile"
+      onchange="upload()"
+    />
 
-	<h2>Choose Filter</h2>
-	<input type="button" id="" value="Blur" onclick="makeBlur()">
-	<input type="button" id="" value="Grayscale" onclick="makeGrayscale()">
-	<input type="button" id="" value="Rainbow" onclick="makeRainbow()">
-	<input type="button" id="" value="Red" onclick="makeRed()">
-	<br>
-  <h2>Reset the Image here</h2>
-	<input type="button" id="reset" value="Reset Image" onclick="reset()">
-</body>
-</html>	
+    <h2>Choose Filter</h2>
+    <input type="button" id="" value="Blur" onclick="makeBlur()" />
+    <input type="button" id="" value="Grayscale" onclick="makeGrayscale()" />
+    <input type="button" id="" value="Rainbow" onclick="makeRainbow()" />
+    <input type="button" id="" value="Red" onclick="makeRed()" />
+    <br />
+    <h2>Reset the Image here</h2>
+    <input type="button" id="reset" value="Reset Image" onclick="reset()" />
+
+    <script src="script.js"></script>
+  </body>
+</html>
